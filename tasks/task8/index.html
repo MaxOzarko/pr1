@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozarko PI-20-02</title>
+</head>
+<body>
+    <script>
+        document.write('<h1> Task24 </h1>');
+        function sumSalaries(salaries) {
+        let sum = 0;
+
+        for (let salary of Object.values(salaries)) {
+            sum += salary;
+        }
+
+        return sum;
+        }
+
+        let salaries = {
+        John: 1000,
+        Bob: 1500,
+        Alice: 1200
+        };
+
+        let totalSalary = sumSalaries(salaries);
+        document.write('<p>'+totalSalary+'</p>');
+
+        let emptySalaries = {};
+        let emptyTotalSalary = sumSalaries(emptySalaries);
+        document.write(emptyTotalSalary);
+    </script>
+</body>
+</html>

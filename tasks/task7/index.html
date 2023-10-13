@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozarko PI-20-02</title>
+</head>
+<body>
+    <script>
+        document.write('<h1> Task24 </h1>');
+        document.write('<h2> у консолі </h2>');
+        function groupById(arr) {
+        return arr.reduce((result, user) => {
+            result[user.id] = user;
+            return result;
+        }, {});
+        }
+
+        let users = [
+        { id: 1, name: "John", age: 25 },
+        { id: 2, name: "Bob", age: 30 },
+        { id: 3, name: "Alice", age: 22 }
+        ];
+
+        let usersById = groupById(users);
+        console.log(usersById);
+    </script>
+</body>
+</html>

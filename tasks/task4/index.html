@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozarko PI-20-02</title>
+</head>
+<body>
+    <script>
+        document.write('<h1> Task21 </h1>');
+        function copySorted(arr) {
+        let sortedArray = arr.slice().sort();
+
+        return sortedArray;
+        }
+
+        let arr = ["HTML", "JavaScript", "CSS"];
+        let sortedCopy = copySorted(arr);
+
+        document.write(sortedCopy); 
+        document.write('<p>'+arr+'</p>');
+    </script>
+</body>
+</html>

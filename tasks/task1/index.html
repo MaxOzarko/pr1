@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozarko PI-20-02</title>
+</head>
+<body>
+    <script>
+        document.write('<h1> Task18 </h1>');
+        let styles = ["jazz", "blues"];
+        document.write('<p>'+styles.join(', ')+'</p>');
+
+        styles.push("rock-n-roll");
+        document.write('<p>'+styles.join(', ')+'</p>');
+
+        let middleIndex = Math.floor(styles.length / 2);
+        styles[middleIndex] = "classics";
+        document.write('<p>'+styles.join(', ')+'</p>');
+
+        let firstElement = styles.shift();
+        document.write('<p>'+styles.join(', ')+'</p>');
+
+        styles.unshift("rap", "reggae");
+        document.write('<p>'+styles.join(', ')+'</p>');   
+    </script>
+</body>
+</html>
